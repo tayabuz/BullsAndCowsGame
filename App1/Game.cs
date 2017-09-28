@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace App1
 {
-
     class Game
     {
         public Game()
@@ -17,8 +16,7 @@ namespace App1
         public List<int> randomNumber;//коллекция, где хранится случайное число 
         public int bullsCount = 0; //счетчик быков
         public int cowsCount = 0; //счетчик коров
-        //public static List<int> userAnswer = new List<int>();//коллекция, где хранится число, которое ввел игрок
-
+		
         public static List<int> getRandomNumber()//генерирует случайное число
         {
             Random rand = new Random();
@@ -70,10 +68,7 @@ namespace App1
                 }
 
                 catch (FormatException)
-                {
-
-                }
-
+                { }
             }
             return userAnswer;
         }
@@ -98,6 +93,4 @@ namespace App1
             return false;
         }
     }
-
 }
-
