@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -29,8 +29,6 @@ namespace App1
         {
             InitializeComponent();
             game = new Game();
-            
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -54,8 +52,6 @@ namespace App1
                 
             }
             outputBox.Text = "";
-
-
         }
 
         private void outputBox_KeyDown(object sender, KeyRoutedEventArgs e)
@@ -64,8 +60,7 @@ namespace App1
             {
                 Button_Click(sender, new RoutedEventArgs());
                 e.Handled = true;
-            }
-            
+            } 
         }
 
         private bool checkOutput(string userAnswerString)
@@ -91,13 +86,11 @@ namespace App1
                     }
                 }
             }
-
             catch (FormatException)
             {
                 userAnswerValid = false;
             }
             return userAnswerValid;
         }
-
     }
 }
